@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Paragraph Example</title>
+    <style>
+        /* Enable smooth scroll for the entire page */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Buttons to scroll to each paragraph -->
+    <button onclick="scrollToParagraph('para1')">Go to Paragraph 1</button>
+    <button onclick="scrollToParagraph('para2')">Go to Paragraph 2</button>
+    <button onclick="scrollToParagraph('para3')">Go to Paragraph 3</button>
+    <button onclick="scrollToParagraph('para4')">Go to Paragraph 4</button>
+    <button onclick="scrollToParagraph('para5')">Go to Paragraph 5</button>
+
+    <!-- Paragraphs -->
+    <p id="para1">This is the first paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    <p id="para2">This is the second paragraph. Quisque facilisis malesuada dolor, a suscipit metus volutpat ut...</p>
+    <p id="para3">This is the third paragraph. Sed vitae libero eget mi ullamcorper blandit nec in velit...</p>
+    <p id="para4">This is the fourth paragraph. Maecenas elementum lectus eu libero volutpat, vel tincidunt nisl laoreet...</p>
+    <p id="para5">This is the fifth paragraph. Nam pretium turpis ac erat efficitur, nec fermentum ligula dapibus...</p>
+
+    <script>
+        // JavaScript function to scroll to the specific paragraph
+        function scrollToParagraph(paragraphId) {
+            document.getElementById(paragraphId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
